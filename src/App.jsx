@@ -10,6 +10,7 @@ import ResumePage from './ResumePage'
 import PageTransition from './PageTransition'
 import Socials from './Socials'
 import AboutMe from './AboutMe'
+import SDPromptGenerator from './SDPromptGenerator'
 import './App.css'
 
 function MenuScreen() {
@@ -38,6 +39,9 @@ function AnimatedRoutes() {
         } />
         <Route path="/socials" element={
           <PageTransition variant="socials"><Socials /></PageTransition>
+        } />
+        <Route path="/sd-prompt" element={
+          <SDPromptGenerator />
         } />
       </Routes>
     </AnimatePresence>
